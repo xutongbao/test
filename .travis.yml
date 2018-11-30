@@ -10,4 +10,4 @@ node_js:
 script:
   - npm run mocha
 after_script:
-  - npm run test2  
+  - npm run test1  
