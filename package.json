@@ -4,7 +4,7 @@
   "description": "Mocha simple test",
   "main": "hello.js",
   "scripts": {
-    "start": "node hello.js",
+    "start": "webpack",
     "test": "mocha",
     "test1": "nyc mocha",
     "test2": "istanbul cover node_modules/mocha/bin/_mocha"
@@ -21,7 +21,14 @@
   },
   "dependencies": {
     "istanbul": "^0.4.5",
-    "nyc": "^13.1.0"
+    "nyc": "^13.1.0",
+    "@babel/core": "~7.0.0",
+    "@babel/preset-env": "~7.0.0",
+    "babel-eslint": "~7.2.3",
+    "babel-loader": "~8.0.0",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",    
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
