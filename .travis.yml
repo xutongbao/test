@@ -9,5 +9,4 @@ node_js:
   - "stable"
 script:
   - npm run mocha
-after_script:
   - npm run test1  
